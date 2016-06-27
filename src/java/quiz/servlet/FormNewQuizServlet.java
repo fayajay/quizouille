@@ -34,12 +34,15 @@ public class FormNewQuizServlet extends HttpServlet {
         // consruit le quiz
         Quiz q = new Quiz();
         q.setNom(req.getParameter("nom")); 
-
+        
         // persist
         QuizService qserv = new QuizService();
         qserv.enregistrerQuiz(q);
         
-        // forward vers liste films
+        // ouvre une session
+        req.getSession().setAttribute("quiz_id", q.getId());
+        
+        // forward 
         resp.sendRedirect("formNewQuestion");
         
     }

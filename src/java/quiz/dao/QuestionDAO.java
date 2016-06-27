@@ -6,10 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import quiz.entity.Question;
 
-/**
- *
- * @author admin
- */
+
 public class QuestionDAO {
 
     public List<Question> listerQuestion() {

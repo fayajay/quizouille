@@ -21,7 +21,7 @@ public class Question implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String titre;
+    private String ennonce;
     private int ordre;
     private String reponse1;
     private String reponse2;
@@ -33,13 +33,14 @@ public class Question implements Serializable {
     @ManyToOne
     @JoinColumn(name="quiz_id")
     private Quiz quiz;
+    
 
-    public String getTitre() {
-        return titre;
+    public String getEnnonce() {
+        return ennonce;
     }
 
-    public void setTitre(String titre) {
-        this.titre = titre;
+    public void setEnnonce(String ennonce) {
+        this.ennonce = ennonce;
     }
 
     public int getOrdre() {

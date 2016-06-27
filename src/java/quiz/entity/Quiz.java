@@ -1,4 +1,3 @@
-
 package quiz.entity;
 
 import java.io.Serializable;
@@ -8,8 +7,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-
 
 @Entity
 public class Quiz implements Serializable {
@@ -19,6 +19,11 @@ public class Quiz implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @OneToMany(mappedBy = "quiz")
+    private List<Question> question = new ArrayList<>();
+
+    private String nom;
+
     public Long getId() {
         return id;
     }
@@ -26,11 +31,6 @@ public class Quiz implements Serializable {
     public void setId(Long id) {
         this.id = id;
     }
-    
-    private String nom;
-    
-    @OneToMany (mappedBy="quiz")
-    private List<Question> question = new ArrayList<>();
 
     public List<Question> getQuestion() {
         return question;
@@ -39,7 +39,7 @@ public class Quiz implements Serializable {
     public void setQuestion(List<Question> question) {
         this.question = question;
     }
-    
+
     public String getNom() {
         return nom;
     }
@@ -48,7 +48,6 @@ public class Quiz implements Serializable {
         this.nom = nom;
     }
 
-    
     @Override
     public int hashCode() {
         int hash = 0;
@@ -73,5 +72,5 @@ public class Quiz implements Serializable {
     public String toString() {
         return "quiz.entity.Quiz[ id=" + id + " ]";
     }
-    
+
 }

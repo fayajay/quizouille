@@ -21,10 +21,10 @@
         </div>
         <div class="contenu">
             <p class="presentation">Bienvenue sur le Quizz  !!!!!<br/>
-            Thème : Le Sport<br/>
+            Thème : ${quiz.nom}<br/>
             Une seule réponse possible<br/>
             Appuyez sur "next" pour passer à la question suivante<br/>
-            <a href="quiz1Question.jsp">NEXT</a></p>
+            <a href="demarrer_quiz">NEXT</a></p>
         </div>
         <div class="pied">
             <c:import url="_PIED.jsp"/>

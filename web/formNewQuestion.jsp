@@ -21,45 +21,24 @@
         </div>
         <div class="contenu">
             <form method="post">
-            
-            Ennoncé Question 1 : <input type="text" name="titre"/>
-            Réponse 1 : <input type="text" name="reponse1"/>
-            Réponse 2 : <input type="text" name="reponse2"/>
-            <br/>
-            Réponse 3 : <input type="text" name="reponse3"/>
-            Réponse 4 : <input type="text" name="reponse4"/>
-            <br/>
-            <br/>
-            Ennoncé Question 2 : <input type="text" name="titre"/>           
-            Réponse 1 : <input type="text" name="reponse1"/>
-            Réponse 2 : <input type="text" name="reponse2"/>
-            <br/>
-            Réponse 3 : <input type="text" name="reponse3"/>
-            Réponse 4 : <input type="text" name="reponse4"/>
-            <br/>
-            <br/>
-            Ennoncé Question 3 : <input type="text" name="titre"/>
-            Réponse 1 : <input type="text" name="reponse1"/>
-            Réponse 2 : <input type="text" name="reponse2"/>
-            <br/>
-            Réponse 3 : <input type="text" name="reponse3"/>
-            Réponse 4 : <input type="text" name="reponse4"/>
-            <br/>
-            <br/>
-            Ennoncé Question 4 : <input type="text" name="titre"/>
-            Réponse 1 : <input type="text" name="reponse1"/>
-            Réponse 2 : <input type="text" name="reponse2"/>
-            <br/>
-            Réponse 3 : <input type="text" name="reponse3"/>
-            Réponse 4 : <input type="text" name="reponse4"/>
-            <br/>
-            <br/>
-            <input type="submit" value="continuer"/>
-             </form>
+
+                <p class="ennonce">Question n° : <input class="ordre" type="text" name="ordre"/>
+                    Ennoncé Question  : <textarea class="question" type="text" name="ennonce"></textarea></p>
+                <p class="reponse">Réponse 1 : <textarea class="reponse" type="text" name="reponse1"></textarea>
+                    Réponse 2 : <textarea class="reponse" type="text" name="reponse2"></textarea>
+                    Réponse 3 : <textarea class="reponse" type="text" name="reponse3"></textarea>
+                    Réponse 4 : <textarea class="reponse" type="text" name="reponse4"></textarea>
+                </p>
+                <p class="reponseCorrect">Réponse Correcte : <input type="text" name="numReponseCorrecte"/></p>
+
+                <br/>
+                <br/>
+                <input class="inputQuestion" type="submit" value="continuer"/>
+            </form>
         </div>
         <div class="pied">
             <c:import url="_PIED.jsp"/>
         </div>
-        
+
     </body>
 </html>

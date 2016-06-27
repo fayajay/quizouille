@@ -21,7 +21,7 @@
         </div>
         <div class="contenu">
              <form method="post">
-            Nom du Quizz : <input type="text" name="nom"/>
+                 <p>Nom du Quizz : <input type="text" name="nom"/></p>
             <input type="submit" value="continuer"/>
              </form>
         </div>

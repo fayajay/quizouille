@@ -25,27 +25,29 @@
                 vous attendent ici !!!!
             </p>
             <div id="quiz">
-            <a class="quizMenu" href="quizCuisine.jsp">
+                
+         
+            <a href='demarrer_quiz?id=${quiz.id}'>${quiz.nom}
                 <figure>
-                    <img src="CSS/img/mega_sand.jpg" width="400" height="300"/>
+                    <img src="CSS/img/mega_sand.jpg" width="500" height="400"/>
                     <figcaption>CUISINE</figcaption>
                 </figure>
             </a>
-            <a class="quizMenu" href="quizAnimaux.jsp">
+            <a href='demarrer_quiz?id=${quiz.id}'>${quiz.nom}
                 <figure>
-                    <img src="CSS/img/animaux.jpg" width="400" height="300"/>
+                    <img src="CSS/img/animaux.jpg" width="500" height="400"/>
                     <figcaption>ANIMAUX</figcaption>
                 </figure>
             </a>
-            <a class="quizMenu" href="quizHistoire.jsp">
+            <a href='demarrer_quiz?id=${quiz.id}'>${quiz.nom}
                 <figure>
-                    <img src="CSS/img/histoire.jpg" width="400" height="300"/>
+                    <img src="CSS/img/histoire.jpg" width="500" height="400"/>
                     <figcaption>HISTOIRE</figcaption>
                 </figure>
             </a>
-            <a class="quizMenu" href="quizSport.jsp">
+            <a href='demarrer_quiz?id=${quiz.id}'>${quiz.nom}
                 <figure>
-                    <img src="CSS/img/sport.jpg" width="400" height="300"/>
+                    <img src="CSS/img/sport.jpg" width="500" height="400"/>
                     <figcaption>SPORT</figcaption>
                 </figure>
             </a>
