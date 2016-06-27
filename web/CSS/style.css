@@ -1,0 +1,65 @@
+body {
+    background-image: url(img/quiz-bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Fontdiner Swanky', cursive;
+}
+
+.clear {
+    clear : both;
+}
+
+#title {
+    font-family: 'Frijole', cursive;
+    text-align: center;
+    font-size: 3em;
+    text-decoration: none;
+    color:#000000;
+}
+
+.menu {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    margin : 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #63FFB2
+}
+
+.quizMenu {
+    font-family: 'Freckle Face', cursive;
+    margin : 15px;
+    font-size: 1.2em;
+}
+
+#quiz {
+    margin-left: 150px;
+    text-align: center;
+    font-size: 1.6em;
+}
+figure {
+    float : left;
+    color : #63FFB2;
+}
+img {
+    box-shadow: 10px 10px 12px #000000;
+}
+
+.presentation {
+    text-align: center;
+    font-size: 1.5em;
+    border-top: 2px dotted aqua;
+    border-bottom: 2px dotted aqua;
+    padding: 20px;
+}
+
+footer {
+    border-top: 2px dotted aqua;
+    margin-top: 30px;
+}
+#pied {
+    float: right;
+
+}
+
