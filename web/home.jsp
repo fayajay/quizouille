@@ -5,6 +5,7 @@
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,33 +26,10 @@
                 vous attendent ici !!!!
             </p>
             <div id="quiz">
-                
-         
-            <a href='demarrer_quiz?id=${quiz.id}'>${quiz.nom}
-                <figure>
-                    <img src="CSS/img/mega_sand.jpg" width="500" height="400"/>
-                    <figcaption>CUISINE</figcaption>
-                </figure>
-            </a>
-            <a href='demarrer_quiz?id=${quiz.id}'>${quiz.nom}
-                <figure>
-                    <img src="CSS/img/animaux.jpg" width="500" height="400"/>
-                    <figcaption>ANIMAUX</figcaption>
-                </figure>
-            </a>
-            <a href='demarrer_quiz?id=${quiz.id}'>${quiz.nom}
-                <figure>
-                    <img src="CSS/img/histoire.jpg" width="500" height="400"/>
-                    <figcaption>HISTOIRE</figcaption>
-                </figure>
-            </a>
-            <a href='demarrer_quiz?id=${quiz.id}'>${quiz.nom}
-                <figure>
-                    <img src="CSS/img/sport.jpg" width="500" height="400"/>
-                    <figcaption>SPORT</figcaption>
-                </figure>
-            </a>
-            </div>
+             <c:forEach items="${quiz}" var="q">
+                 <a id="listMenu" href='demarrer_quiz?id=${q.id}'>${q.nom}</a><br/>
+             </c:forEach>
+            </div>   
             <div class="clear"></div>
         </div>
         <div class="pied">

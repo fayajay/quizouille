@@ -3,8 +3,10 @@
     Created on : 24 juin 2016, 14:51:47
     Author     : admin
 --%>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,10 +23,20 @@
         </div>
         <div class="contenu">
             <p class="presentation">Bienvenue sur le Quizz  !!!!!<br/>
-            Thème : ${quiz.nom}<br/>
             Une seule réponse possible<br/>
             Appuyez sur "next" pour passer à la question suivante<br/>
-            <a href="demarrer_quiz">NEXT</a></p>
+            BONNE CHANCE...
+            </p>
+            <div id="game">
+            ${question.ennonce}<br/><br/>
+            ${question.reponse1} <input type="radio" name="choix" /><br/>
+            ${question.reponse2} <input type="radio" name="choix" /><br/>
+            ${question.reponse3} <input type="radio" name="choix" /><br/>
+            ${question.reponse4} <input type="radio" name="choix" /><br/>
+            <br/>
+            <br/>
+            <a id="next" href="question_suivante">NEXT ---></a>
+            </div>
         </div>
         <div class="pied">
             <c:import url="_PIED.jsp"/>

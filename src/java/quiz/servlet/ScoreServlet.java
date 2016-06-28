@@ -20,6 +20,6 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "ScoreServlet", urlPatterns = {"/ScoreServlet"})
 public class ScoreServlet extends HttpServlet {
 
-
+        
 
 }

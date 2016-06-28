@@ -26,7 +26,7 @@ body {
     margin : 10px;
     font-size: 1.5em;
     text-decoration: none;
-    color: #63FFB2
+    color: #63FFB2;
 }
 
 .quizMenu {
@@ -37,9 +37,12 @@ body {
 
 /*HomePage*/
 #quiz {
-    margin-left: 150px;
     text-align: center;
-    font-size: 1.6em;
+}
+#listMenu {
+    text-decoration: none;
+    font-size: 3em;
+    color: #EFA0FF;
 }
 figure {
     float : left;
@@ -55,6 +58,19 @@ img {
     border-top: 2px dotted aqua;
     border-bottom: 2px dotted aqua;
     padding: 20px;
+}
+
+/* QuizGame*/
+#game {
+    text-align: center;
+    font-size: 1.8em;
+    color: #EFA0FF;
+}
+#next {
+    font-size: 2em;
+    color: #63FFB2;
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
 }
 
 /*FormNewQuestion*/
