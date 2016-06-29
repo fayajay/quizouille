@@ -17,8 +17,8 @@ public class DemarrerQuizServlet extends HttpServlet {
         // Place quiz_id en session
         req.getSession().setAttribute("quiz_id", Long.parseLong(req.getParameter("id")));
         req.getSession().setAttribute("ordreQuestion", null);
+        
         // met le score à zéro en session
-
         req.getSession().setAttribute("score", 0);
 
         // redirige vers QuestionSuivanteServlet

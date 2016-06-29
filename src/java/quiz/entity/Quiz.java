@@ -20,7 +20,7 @@ public class Quiz implements Serializable {
     private Long id;
 
     @OneToMany(mappedBy = "quiz")
-    private List<Question> question = new ArrayList<>();
+    public List<Question> question = new ArrayList<>();
 
     private String nom;
 

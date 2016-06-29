@@ -28,14 +28,19 @@
             BONNE CHANCE...
             </p>
             <div id="game">
+            <form method="POST">
+            Question n° : ${question.ordre}<br/>
             ${question.ennonce}<br/><br/>
-            ${question.reponse1} <input type="radio" name="choix" /><br/>
-            ${question.reponse2} <input type="radio" name="choix" /><br/>
-            ${question.reponse3} <input type="radio" name="choix" /><br/>
-            ${question.reponse4} <input type="radio" name="choix" /><br/>
+            
+            ${question.reponse1} <input type="radio" name="choix" value="1"/><br/>
+            ${question.reponse2} <input type="radio" name="choix" value="2"/><br/>
+            ${question.reponse3} <input type="radio" name="choix" value="3"/><br/>
+            ${question.reponse4} <input type="radio" name="choix" value="4"/><br/>
             <br/>
             <br/>
-            <a id="next" href="question_suivante">NEXT ---></a>
+            <!--<a id="next" href="question_suivante">NEXT</a>-->
+            <input type="submit"/>
+            </form>
             </div>
         </div>
         <div class="pied">

@@ -26,7 +26,7 @@ public class QuestionService {
         List<Question> listQuestion = new QuestionDAO().trouverLesQuestion(quiz_id);
         
         if (listQuestion.isEmpty()) {
-            throw new RuntimeException("ERREUR");
+            throw new RuntimeException("LE QUIZ NE COMPORTE PAS DE QUESTION");
         }
         for (Question question:listQuestion)  {
             if (question.getOrdre()>ordreQuestionActuel){

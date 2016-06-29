@@ -21,7 +21,7 @@
         </div>
         <div class="contenu">
             
-            
+            Votre score est de : 
             
             
             
